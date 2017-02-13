@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Sell</title>
+    </h:head>
+   <h:body>
+
+        <h:form>
+            <p>
+              
+            </p>
+            <p> Sell Stock</p>
+            
+             <h:outputLabel for="txtStockCode" value="Enter your Stock Code" ></h:outputLabel>
+            <h:inputText id="txtStockCode" value="#{sell.stockCode}"></h:inputText>
+            <p> </p>
+            <h:outputLabel for="txtNoOfStocks" value="Enter number of Stocks" ></h:outputLabel>
+            <h:inputText id="txtNoOfStocks" value="#{sell.quantity}"></h:inputText>
+            <p> </p>
+             <h:outputLabel for="txtbPrice" value="Enter price to Sell" ></h:outputLabel>
+            <h:inputText id="txtsPrice" value="#{sell.sellPrice}"></h:inputText>
+            <p> </p>
+           <h:commandButton value="Buy" action="#{sell.SellMethod()}" > </h:commandButton>
+            
+        </h:form>
+
+
+    </h:body>
+    
+</html>
+

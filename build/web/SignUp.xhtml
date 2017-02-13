@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Sign Up</title>
+    </h:head>
+   <h:body>
+
+        <h:form>
+            <p>
+              
+            </p>
+            <p> SignUp Here</p>
+            
+             <h:outputLabel for="txtSsn" value="Enter your SSN" ></h:outputLabel>
+            <h:inputText id="txtSsn" value="#{signUp.ssn}"></h:inputText>
+            <p> </p>
+            <h:outputLabel for="txtLoginId" value="Enter your Login Id" ></h:outputLabel>
+            <h:inputText id="txtLoginId" value="#{signUp.loginId}"></h:inputText>
+            <p> </p>
+            <h:outputLabel for="txtPassword" value="Enter your Password" ></h:outputLabel>
+            <h:inputText id="txtPassword" value="#{signUp.password}"></h:inputText>
+            <p> </p>
+            <p> Security Question 1 
+            <h:selectOneMenu value="#{signUp.q1}">
+                
+                <f:selectItem itemValue="Fathers Middle Name" itemLabel="Fathers Middle Name" />
+                 <f:selectItem itemValue="Mothers Maiden Name" itemLabel="Mothers Maiden Name" />	
+                <f:selectItem itemValue="City you born" itemLabel="City you born" />
+                 <f:selectItem itemValue="City you born" itemLabel="Favorite Sports" />	   							
+                 
+             </h:selectOneMenu>
+                
+            <h:inputText id="txtA1" value="#{signUp.a1}"></h:inputText>    
+            </p>
+            <p> Security Question 1 
+            
+             <h:selectOneMenu value="#{signUp.q2}">
+                 
+                 
+                 <f:selectItem itemValue="Mothers Maiden Name" itemLabel="Mothers Maiden Name" />	
+                <f:selectItem itemValue="City you born" itemLabel="City you born" />
+                 <f:selectItem itemValue="City you born" itemLabel="Favorite Sports" />
+                <f:selectItem itemValue="Fathers Middle Name" itemLabel="Fathers Middle Name" />
+                 
+            </h:selectOneMenu>
+                 
+            <h:inputText id="txtA2" value="#{signUp.a2}"></h:inputText>              
+            </p>
+            <h:outputLabel for="txtAmount" value="Enter your Amount" ></h:outputLabel>
+            <h:inputText id="txtAmount" value="#{signUp.amount}"></h:inputText>
+            <p> </p>
+            
+            <h:commandButton value="Register" action="#{signUp.SignUpMethod()}" ></h:commandButton>
+
+            
+        </h:form>
+
+      
+            
+           
+    </h:body>
+    
+</html>
+
